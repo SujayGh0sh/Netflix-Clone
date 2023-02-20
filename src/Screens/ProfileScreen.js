@@ -49,7 +49,6 @@ function ProfileScreen() {
                     {"(Current plan: " + subscription.role + ")"}
                 </h4>
               )}
-              {/* <h3>Plans</h3> */}
               <PlanScreen />
               <button
                 onClick={() => auth.signOut()}

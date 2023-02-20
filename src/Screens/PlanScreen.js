@@ -95,7 +95,6 @@ function PlanScreen() {
         let isCurrentPlan=null;
   if(subscription && subscription.role)
     isCurrentPlan = productData.name?.includes(subscription.role);
-        // console.log("saAS", isCurrentPlan);
         return (
           <div
             key={productsId}
@@ -119,34 +118,6 @@ function PlanScreen() {
     </div>
   
   );
-
-  // return(
-  //   <div className="planScreen">
-  //     {subscription && (
-  //       <p>
-  //         Renewal date:{" "}
-  //         {new Date(subscription?.current_period_end * 1000).toLocaleDateString}
-  //       </p>
-  //     )}
-  //     {Object.entries(products).map(([productId, productData]) => {
-  //       const isCurrentPackage = productData.name?.toLowerCase().includes(subscription?.role);
-
-  //       return(
-  //         <div key={productId} className={`${isCurrentPackage && "planScreen_plan--disabled"} planScreen_plan`}>
-  //           <div className="planScreen_info">
-  //             <h5>{productData.name}</h5>
-  //             <h6>{productData.description}</h6>
-  //           </div>
-
-  //           <button onClick={() => !isCurrentPackage && loadCheckout(productData.prices.priceId)}>
-  //             {isCurrentPackage ? "Current Package" : "Subscribe"}
-  //           </button>
-  //         </div>
-  //       );
-  //     })}
-  //   </div>
-  // );
 }
-
 
 export default PlanScreen;

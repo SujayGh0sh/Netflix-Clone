@@ -1,23 +1,15 @@
-    // import firebase from 'firebase/compat/app';
-    // import 'firebase/compat/firestore';
-    // import 'firebase/compat/auth';
-
-    import firebase from 'firebase/compat/app';
-    import 'firebase/compat/auth';
-    import 'firebase/compat/messaging';
-    import 'firebase/compat/firestore';
-
-// import firebase from "firebase/app";
-// import "firebase/firestore";
-// import "firebase/auth";
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/messaging';
+import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyChJbLxrsLRsgLVvOHeDn-wekMwaAkbLp0",
-  authDomain: "netflix-1c4fb.firebaseapp.com",
-  projectId: "netflix-1c4fb",
-  storageBucket: "netflix-1c4fb.appspot.com",
-  messagingSenderId: "951680186938",
-  appId: "1:951680186938:web:786d0af916b2290a125303",
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_MESSAGE_SENDER_ID",
+  appId: "YOUR_APP_ID",
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
